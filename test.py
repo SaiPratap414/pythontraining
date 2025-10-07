@@ -1,0 +1,9 @@
+print("hi")
+a=10
+b=20
+name="sai"
+result=True
+c=a+b
+print(c)
+print(name)
+print(result)
