@@ -1,5 +1,3 @@
-
-# Take 5 numbers one after another
 num = []
 for i in range(5):
     number = int(input(f"Enter number {i+1}: "))
