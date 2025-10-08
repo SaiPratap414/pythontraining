@@ -1,0 +1,11 @@
+num ={"4","3","2","1","4"}
+print(num)
+num.update([9,5])
+print(num)
+# num.remove(4)
+num.discard(4)
+print(num)
+num.clear()
+print(num)
+num.pop()
+print(num)
