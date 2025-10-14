@@ -5,6 +5,8 @@ class employee(ABC):
     @abstractmethod
     def salary(self):
         pass
+    def details(self):
+        print("details of employee")
 
 class manager(employee):
     def salary(self):  
