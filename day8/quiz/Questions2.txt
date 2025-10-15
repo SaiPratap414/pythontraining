@@ -1,0 +1,26 @@
+QUESTION PAPER 2
+Topic: Python Programming
+==================================================
+
+Q1. What keyword is used to define a function in Python?
+
+Q2. Which symbol is used for comments in Python?
+
+Q3. What is the output of print(type([]))?
+
+Q4. How do you create a list in Python?
+
+Q5. What does 'len()' function do?
+
+Q6. Which loop is used to iterate over a sequence?
+
+Q7. What is the difference between '==' and 'is'?
+
+Q8. How do you import a module in Python?
+
+Q9. What is indentation used for in Python?
+
+Q10. Which function is used to get user input?
+
+==================================================
+End of Question Paper

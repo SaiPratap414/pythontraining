@@ -1,0 +1,26 @@
+QUESTION PAPER 1
+Topic: Mathematical Operators
+==================================================
+
+Q1. What is 15 + 25?
+
+Q2. Calculate 100 - 67
+
+Q3. What is 8 × 9?
+
+Q4. What is 144 ÷ 12?
+
+Q5. What is 2^5 (2 to the power of 5)?
+
+Q6. What is 17 % 5 (17 modulo 5)?
+
+Q7. Calculate 45 + 33 - 28
+
+Q8. What is 7 × 6 ÷ 2?
+
+Q9. What is the square of 12?
+
+Q10. Calculate 200 ÷ 8 + 15
+
+==================================================
+End of Question Paper

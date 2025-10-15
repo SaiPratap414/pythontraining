@@ -8,3 +8,11 @@ while True:
     if ch!='y':
         break
 f.close()
+with open("file1.txt") as f:
+    for line in f:
+        print(line.strip())
+        
+# file = open("file1.txt", "r")
+# data = f.read()
+# print("Data in file1.txt:")
+# file.close()
