@@ -1,6 +1,6 @@
 import mysql.connector
 
-# Connect and setup
+# Connect to database
 mydb = mysql.connector.connect(
     host="localhost",
     user="root",
@@ -9,32 +9,41 @@ mydb = mysql.connector.connect(
 )
 mycursor = mydb.cursor()
 
-# Create table
-mycursor.execute("DROP TABLE IF EXISTS customers")
-mycursor.execute("""
-    CREATE TABLE customers (
-        id INT AUTO_INCREMENT PRIMARY KEY,
-        name VARCHAR(255),
-        email VARCHAR(255)
-    )
-""")
+# # Create table
+# mycursor.execute("""
+#     CREATE TABLE IF NOT EXISTS students (
+#         id INT AUTO_INCREMENT PRIMARY KEY,
+#         name VARCHAR(255),
+#         age INT,
+#         course VARCHAR(255)
+#     )
+# """)
 
 # Insert data
-customers = [
-    ("John Doe", "john@email.com"),
-    ("Jane Smith", "jane@email.com"),
-    ("Bob Johnson", "bob@email.com")
-]
+# students = [
+#     ("pratap", 24, "CS"),
+#     ("pooja", 29, "Math"),
+#     ("shreya", 29, "Physics")
+# ]
 
-mycursor.executemany("INSERT INTO customers (name, email) VALUES (%s, %s)", customers)
-mydb.commit()
+# mycursor.executemany("INSERT INTO students (name, age, course) VALUES (%s, %s, %s)", students)
+# mydb.commit()
 
-# Select and display
-mycursor.execute("SELECT * FROM customers")
+
+while True:
+    name =input("enter name:")
+    age =int(input("enter age:"))
+    course =input("enter course:") 
+    mycursor.execute("INSERT INTO students (name, age, course) VALUES (%s, %s, %s)", (name, age, course))
+    mydb.commit()
+    ch = input("do you want to add more data (y/n):")
+    if ch.lower() != 'y':
+        break 
+# Show data
+mycursor.execute("SELECT * FROM students")
 result = mycursor.fetchall()
 
-print("Customer data:")
 for row in result:
-    print(f"ID: {row[0]}, Name: {row[1]}, Email: {row[2]}")
+    print(row)
 
 mydb.close()
